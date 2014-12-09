@@ -96,7 +96,7 @@
 
 //http://code.tutsplus.com/tutorials/adding-blur-effects-on-ios--cms-21488
 //https://github.com/rnystrom/WeatherExample
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface UIImage (ImageEffects)
 

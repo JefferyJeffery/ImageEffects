@@ -14,6 +14,9 @@
 		7BFAA1051A36C13500CD9775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAA1041A36C13500CD9775 /* Images.xcassets */; };
 		7BFAA1081A36C13500CD9775 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAA1061A36C13500CD9775 /* LaunchScreen.xib */; };
 		7BFAA1141A36C13500CD9775 /* ImageEffects_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAA1131A36C13500CD9775 /* ImageEffects_DemoTests.m */; };
+		7BFAA12E1A36D25300CD9775 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAA12B1A36D25300CD9775 /* UIImage+ImageEffects.m */; };
+		7BFAA12F1A36D25300CD9775 /* UIImage+takeSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAA12D1A36D25300CD9775 /* UIImage+takeSnapshot.m */; };
+		7BFAA1331A36D2BA00CD9775 /* ImageEffects.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAA1321A36D2BA00CD9775 /* ImageEffects.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		7BFAA10D1A36C13500CD9775 /* ImageEffects_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageEffects_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFAA1121A36C13500CD9775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BFAA1131A36C13500CD9775 /* ImageEffects_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageEffects_DemoTests.m; sourceTree = "<group>"; };
+		7BFAA12A1A36D25300CD9775 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "../Classes/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7BFAA12B1A36D25300CD9775 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../Classes/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		7BFAA12C1A36D25300CD9775 /* UIImage+takeSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+takeSnapshot.h"; path = "../Classes/UIImage+takeSnapshot.h"; sourceTree = "<group>"; };
+		7BFAA12D1A36D25300CD9775 /* UIImage+takeSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+takeSnapshot.m"; path = "../Classes/UIImage+takeSnapshot.m"; sourceTree = "<group>"; };
+		7BFAA1311A36D28A00CD9775 /* ImageEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImageEffects.h; path = ../Classes/ImageEffects.h; sourceTree = "<group>"; };
+		7BFAA1321A36D2BA00CD9775 /* ImageEffects.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ImageEffects.podspec; path = ../ImageEffects.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,8 @@
 		7BFAA0EB1A36C13500CD9775 = {
 			isa = PBXGroup;
 			children = (
+				7BFAA1321A36D2BA00CD9775 /* ImageEffects.podspec */,
+				7BFAA1301A36D25800CD9775 /* classes */,
 				7BFAA0F61A36C13500CD9775 /* ImageEffects_Demo */,
 				7BFAA1101A36C13500CD9775 /* ImageEffects_DemoTests */,
 				7BFAA0F51A36C13500CD9775 /* Products */,
@@ -117,6 +128,18 @@
 				7BFAA1121A36C13500CD9775 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BFAA1301A36D25800CD9775 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				7BFAA1311A36D28A00CD9775 /* ImageEffects.h */,
+				7BFAA12A1A36D25300CD9775 /* UIImage+ImageEffects.h */,
+				7BFAA12B1A36D25300CD9775 /* UIImage+ImageEffects.m */,
+				7BFAA12C1A36D25300CD9775 /* UIImage+takeSnapshot.h */,
+				7BFAA12D1A36D25300CD9775 /* UIImage+takeSnapshot.m */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +225,7 @@
 				7BFAA1031A36C13500CD9775 /* Main.storyboard in Resources */,
 				7BFAA1081A36C13500CD9775 /* LaunchScreen.xib in Resources */,
 				7BFAA1051A36C13500CD9775 /* Images.xcassets in Resources */,
+				7BFAA1331A36D2BA00CD9775 /* ImageEffects.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFAA12E1A36D25300CD9775 /* UIImage+ImageEffects.m in Sources */,
 				7BFAA1001A36C13500CD9775 /* ViewController.m in Sources */,
 				7BFAA0FD1A36C13500CD9775 /* AppDelegate.m in Sources */,
 				7BFAA0FA1A36C13500CD9775 /* main.m in Sources */,
+				7BFAA12F1A36D25300CD9775 /* UIImage+takeSnapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
