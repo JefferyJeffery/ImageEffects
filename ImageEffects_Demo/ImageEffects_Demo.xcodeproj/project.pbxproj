@@ -14,8 +14,6 @@
 		7BFAA1051A36C13500CD9775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAA1041A36C13500CD9775 /* Images.xcassets */; };
 		7BFAA1081A36C13500CD9775 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAA1061A36C13500CD9775 /* LaunchScreen.xib */; };
 		7BFAA1141A36C13500CD9775 /* ImageEffects_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAA1131A36C13500CD9775 /* ImageEffects_DemoTests.m */; };
-		7BFAA1281A36C1A200CD9775 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAA1251A36C1A200CD9775 /* UIImage+ImageEffects.m */; };
-		7BFAA1291A36C1A200CD9775 /* UIImage+takeSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAA1271A36C1A200CD9775 /* UIImage+takeSnapshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +40,6 @@
 		7BFAA10D1A36C13500CD9775 /* ImageEffects_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageEffects_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFAA1121A36C13500CD9775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BFAA1131A36C13500CD9775 /* ImageEffects_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageEffects_DemoTests.m; sourceTree = "<group>"; };
-		7BFAA1241A36C1A200CD9775 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Classes/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		7BFAA1251A36C1A200CD9775 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Classes/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		7BFAA1261A36C1A200CD9775 /* UIImage+takeSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+takeSnapshot.h"; path = "Classes/UIImage+takeSnapshot.h"; sourceTree = "<group>"; };
-		7BFAA1271A36C1A200CD9775 /* UIImage+takeSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+takeSnapshot.m"; path = "Classes/UIImage+takeSnapshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +63,6 @@
 		7BFAA0EB1A36C13500CD9775 = {
 			isa = PBXGroup;
 			children = (
-				7BFAA11D1A36C14300CD9775 /* Classes */,
 				7BFAA0F61A36C13500CD9775 /* ImageEffects_Demo */,
 				7BFAA1101A36C13500CD9775 /* ImageEffects_DemoTests */,
 				7BFAA0F51A36C13500CD9775 /* Products */,
@@ -124,17 +117,6 @@
 				7BFAA1121A36C13500CD9775 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7BFAA11D1A36C14300CD9775 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				7BFAA1241A36C1A200CD9775 /* UIImage+ImageEffects.h */,
-				7BFAA1251A36C1A200CD9775 /* UIImage+ImageEffects.m */,
-				7BFAA1261A36C1A200CD9775 /* UIImage+takeSnapshot.h */,
-				7BFAA1271A36C1A200CD9775 /* UIImage+takeSnapshot.m */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,11 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFAA1281A36C1A200CD9775 /* UIImage+ImageEffects.m in Sources */,
 				7BFAA1001A36C13500CD9775 /* ViewController.m in Sources */,
 				7BFAA0FD1A36C13500CD9775 /* AppDelegate.m in Sources */,
 				7BFAA0FA1A36C13500CD9775 /* main.m in Sources */,
-				7BFAA1291A36C1A200CD9775 /* UIImage+takeSnapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +412,7 @@
 				7BFAA1191A36C13500CD9775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BFAA11A1A36C13500CD9775 /* Build configuration list for PBXNativeTarget "ImageEffects_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +421,7 @@
 				7BFAA11C1A36C13500CD9775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
